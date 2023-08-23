@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200&display=swap');
+
+:root {
+    --fonte-desenhada: 'Edu VIC WA NT Beginner', cursive;
+    --fonte-padrao: 'Montserrat', sans-serif;
+    --azul-claro: rgb(159, 159, 230);
+    --azul-escuro: rgb(61, 61, 131);
+    --fundo-campo: rgb(245, 238, 255);
+    --preto: black;
+    --laranja: #F7BF65;
+    --branco: white;
+}
+
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    background-color: var(--azul-claro);
+}
+
+.container {
+    margin-top:15vh;
+    display:flex;
+    justify-content: center;
+    min-width:150px;
+    
+}
+
+.container__box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:75%;
+}
+
+.container__title {
+    color:var(--branco);
+    font-family: var(--fonte-desenhada);
+    font-weight: bold;
+    font-size:40px;
+}
+
+.container__form-adicionar {
+    display:flex;
+    position:sticky;
+    top:10px;
+    margin: 15px;
+    width:100%;
+    
+}
+
+.container__campos {
+    background-color: var(--fundo-campo);
+    border-radius:5px;
+    box-shadow: 4px 3px 2px;
+    font-size:18px;
+    padding:8px;
+    height:40px;  
+    opacity:1;
+}
+
+.container__campos--hover:hover {
+    background-color: var(--branco);
+    transition: 0.2s ease-in;
+}
+
+.container__campos--active:active {
+    border-width:3px;
+}
+
+.container__input-adicionar {
+    margin-right:15px;
+    line-height:35px;
+    width:100%;
+    line-height:35px;
+}
+
+#container__button-adicionar {
+    font-weight: bold;
+    color:var(--azul-escuro);
+    text-transform:uppercase;
+}
+
+
+.container__form-itens {
+    align-self:flex-start;
+}
+
+.container__itens {
+    list-style-type: none;
+    border-bottom: 2px solid var(--azul-escuro);
+    width:72vw;
+    margin:15px;
+    padding-bottom:7px;
+    
+}
+
+.container__input-itens {
+    margin-right:10px;
+    
+}
+
+.container__label-itens {
+    text-transform:uppercase;
+    color:var(--branco);
+    font-weight: bolder;
+}
+
+.show {
+    animation: showw 500ms ease-out;
+}
+
+.hide { 
+    opacity: 0;
+}
+
+@keyframes showw {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width:461px) {
+
+    .container__form-adicionar{
+        flex-wrap:wrap;
+    }
+
+    .container__input-adicionar {
+        margin:0 auto;
+        width:100%;
+       
+    }
+
+    #container__button-adicionar {
+        width:100%;
+        margin:15px auto;
+        width:100%;
+        
+    }
+}
