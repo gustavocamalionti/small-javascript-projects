@@ -56,3 +56,24 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
+
+.data {
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+.data h2 {
+  font-size:1.5rem;
+}
+.data p {
+  font-size:1rem;
+}
+
+.success{
+  background-color: #a9fbc1;padding:35px;
+}
+
+.error {
+  background-color: #fba9b4;padding:35px;
+}

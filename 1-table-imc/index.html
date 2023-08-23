@@ -12,13 +12,42 @@
 <body>
 
   <section class="container">
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Repellendus nisi explicabo saepe voluptatibus consequuntur et corporis
-      maxime quos, doloribus vitae voluptatum quisquam necessitatibus
-      pariatur veritatis exercitationem beatae officiis suscipit Ea!
-    </p>
+    <h1>Tabela IMC</h1>
+    <hr>
+    <div class="data">
+      <div class="data-imc">
+        <h2>IMC</h2>
+        <p>Menor do que 18.5</p>
+        <p>Entre 18.5 e 24.9</p>
+        <p>Entre 25 e 29,9</p>
+        <p>Entre 30 e 34.9</p>
+        <p>Entre 35 e 39.9</p>
+        <p>Mais do que 40</p>
+      </div>
+
+      <div class="data-results">
+        <h2>Resultado</h2>
+        <p>Abaixo do peso</p>
+        <p>Peso normal</p>
+        <p>Sobrepeso</p>
+        <p>Obesidade grau 1</p>
+        <p>Obesidade grau 2</p>
+        <p>Obesidade grau 3</p>
+      </div>
+    </div>
+
+    <h1>Calcule seu IMC</h1>
+    <form action="" id="form" method="POST">
+      <label for="weightKg">Peso(Kg):</label>
+      <input type="text" id="weightKg" name="weightKg" class="form-input">
+      <label for="heightM">Altura(Kg):</label>
+      <input type="text" id="heightM" name="heightM" class="form-input">
+      <button class="form-button" type="submit">Calcular</button>
+      <div id="divResult">
+
+      </div>
+    </form>
+
   </section>
 
   <script src="./assets/js/main.js"></script>
